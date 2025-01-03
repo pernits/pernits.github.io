@@ -4,7 +4,7 @@ window.addEventListener('scroll', () => {
 
     sections.forEach(section => {
         const top = window.scrollY;
-        const offset = section.offsetTop - 500; // Adjust offset based on header height
+        const offset = section.offsetTop - 500; 
         const height = section.offsetHeight;
         const id = section.getAttribute('id');
 
