@@ -91,7 +91,7 @@ section{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 50px; /* Increase the gap between image and content */
+    gap: 50px;
     padding: 20px;
     position: relative;
 }
@@ -101,13 +101,13 @@ section{
     line-height: 1.3;
 }
 .home-text {
-    max-width: 600px; /* Restrict the text width */
+    max-width: 600px;
     line-height: 1.6;
     color: #fff;
-    margin-left: 20px; /* Add extra margin to push the description further right */
+    margin-left: 20px; 
 }
 .home-text h1 {
-    font-size: 2.5rem; /* Make the heading stand out */
+    font-size: 2.5rem; 
 }
 .home-text h2 {
     font-size: 1.8rem;
@@ -125,9 +125,9 @@ span{
     font-weight: 700;
 }
 .home-text {
-    max-width: 600px; /* Restrict the width of the text to prevent it from taking too much space */
-    line-height: 1.6; /* Improve readability */
-    color: #fff; /* Ensure text color matches the theme */
+    max-width: 600px; 
+    line-height: 1.6; 
+    color: #fff;
 }
 .home-content p{
     font-size: 1.6rem;
@@ -135,23 +135,23 @@ span{
 .home img {
     width: 250px;
     height: 250px;
-    border-radius: 50%; /* Circular image */
+    border-radius: 50%; 
     object-fit: cover;
     position: relative;
-    z-index: 1; /* Ensure image content stays above other elements */
-    box-shadow: 0 0 30px 15px rgba(183, 75, 75, 0.6); /* Glow effect around the edges */
+    z-index: 1; 
+    box-shadow: 0 0 30px 15px rgba(183, 75, 75, 0.6); 
 }
 .home::before {
     content: '';
     position: absolute;
-    width: 300px; /* Size of the glow */
-    height: 300px; /* Size of the glow */
-    border-radius: 50%; /* Circular shape */
-    background: radial-gradient(circle, rgba(183, 75, 75, 0.6), transparent); /* Smooth gradient */
-    top: 50%; /* Center vertically */
-    left: 15%; /* Adjust for proper alignment */
-    transform: translate(-50%, -50%); /* Center the glow exactly behind the image */
-    z-index: 0; /* Keep it behind the image */
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    background: radial-gradient(circle, rgba(183, 75, 75, 0.6), transparent); 
+    top: 50%; 
+    left: 15%; 
+    transform: translate(-50%, -50%); 
+    z-index: 0; 
 }
 .home-img img {
     width: 100%;
@@ -161,7 +161,7 @@ span{
 }
 
 .home-img img:hover {
-    transform: scale(1.1); /* Slightly zoom in when hovered */
+    transform: scale(1.1); 
 }
 .home-content .social-icons {
     display: flex;
@@ -276,36 +276,36 @@ html {
     scroll-behavior: smooth;
 }
 section {
-    padding: 10rem 5%; /* Adjust the top padding to account for the header height */
-    scroll-margin-top: 8rem; /* Ensure smooth scrolling stops below the header */
+    padding: 10rem 5%; 
+    scroll-margin-top: 8rem; 
 }
 section h2 {
-    font-size: 3rem; /* Adjust the size for headings */
+    font-size: 3rem; 
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 section p {
-    font-size: 1.8rem; /* Adjust the size for paragraphs */
-    line-height: 1.8; /* Improve readability */
+    font-size: 1.8rem; 
+    line-height: 1.8; 
 }
 section::before {
-    content: attr(data-title); /* Use the section's data-title attribute as the title */
+    content: attr(data-title); 
     display: block;
-    font-size: 5rem; /* Adjust font size as needed */
-    color: #b74b4b; /* Red color for the section title */
-    text-align: center; /* Center the title */
-    margin-bottom: 3rem; /* Add spacing between the title and content */
-    font-weight: 700; /* Make it bold */
+    font-size: 5rem; 
+    color: #b74b4b; 
+    text-align: center; 
+    margin-bottom: 3rem; 
+    font-weight: 700; 
 }
 .profile-img {
-    width: 200px; /* Adjust the width */
-    height: 200px; /* Adjust the height */
-    object-fit: cover; /* Ensures the image doesn't get stretched/distorted */
-    border-radius: 50%; /* Optional: gives the image a circular shape */
-    box-shadow: 0 0 25px #b74b4b; /* Optional: adds shadow for better visibility */
-    margin-left: 20px; /* Space between the text and the image */
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    box-shadow: 0 0 25px #b74b4b; 
+    margin-left: 20px; 
 }
-/* Hobbies Section */
+
 #hobbies {
     padding: 50px;
     background-color: black;
@@ -357,7 +357,7 @@ section::before {
     font-size: 1rem;
     color: #cccccc;
 }
-/* Projects Section */
+
 #projects {
     padding: 50px;
     background-color: black;
@@ -371,7 +371,6 @@ section::before {
     color: #f5f5f5;
 }
 
-/* Projects Section */
 .projects-container {
     display: flex;
     justify-content: center;
@@ -379,12 +378,11 @@ section::before {
     gap: 20px;
 }
 
-/* Project Card Styling */
 .project-card {
     background-color: #1e1e1e;
     border-radius: 10px;
-    width: 320px; /* Set a fixed width */
-    height: 400px; /* Set a fixed height */
+    width: 320px; 
+    height: 400px; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -398,24 +396,21 @@ section::before {
     transform: scale(1.05);
 }
 
-/* Image Styling */
 .project-card img {
-    width: 100%; /* Ensure the image fits the card */
-    height: 200px; /* Set a fixed height for images */
-    object-fit: cover; /* Maintain aspect ratio while filling the container */
-    border: 3px solid #b74b4b; /* Add border with specified color */
-    border-radius: 10px; /* Match card border-radius */
+    width: 100%; 
+    height: 200px; /
+    object-fit: cover;
+    border: 3px solid #b74b4b; 
+    border-radius: 10px; 
     margin-bottom: 15px;
 }
 
-/* Title Styling */
 .project-card h3 {
     font-size: 2rem;
     margin-bottom: 10px;
     color: #b74b4b;;
 }
 
-/* Tags Styling */
 .project-card .tag {
     display: inline-block;
     background-color: #b74b4b;
@@ -426,8 +421,7 @@ section::before {
     margin-right: 5px;
     margin-top: 10px;
 }
-/* Contact Section Styling */
-/* Contact Me Section */
+
 .contact-content {
     background: linear-gradient(90deg, #b74b4b, #e08f8f);
     color: white;
@@ -452,26 +446,24 @@ section::before {
   
   .contact-btn {
     display: inline-block;
-    background: white; /* White background */
-    color: #b74b4b; /* Purple text */
-    padding: 12px 30px; /* Adjust padding for better spacing */
-    border-radius: 25px; /* Rounded edges */
-    font-size: 1rem; /* Font size */
+    background: white; 
+    color: #b74b4b;
+    padding: 12px 30px; 
+    border-radius: 25px; 
+    font-size: 1rem; 
     font-weight: bold;
-    text-decoration: none; /* No underline */
-    border: none; /* No border */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    text-decoration: none; 
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
   }
   
   .contact-btn:hover {
-    background: #f3f3f3; /* Slightly gray background on hover */
-    color: #b74b4b; /* Keep purple text */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background: #f3f3f3; 
+    color: #b74b4b; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
   }
   
-  
-  /* Footer Styling */
   .footer {
     background-color: black;
     color: #aaa;
